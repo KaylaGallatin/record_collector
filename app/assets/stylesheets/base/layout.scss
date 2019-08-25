@@ -1,0 +1,47 @@
+// NAVIGATION
+
+.mdl-navigation {
+  .mdl-navigation__link {
+    color: $rc-primary-contrast;
+    font-weight: 500;
+    font-family: 'Roboto';
+    .mdl-button {
+      text-transform: none;
+      color: $rc-primary-contrast !Important;
+      &:hover, &:focus { background-color: $rc-primary }
+    }
+  }
+}
+
+.mdl-layout__drawer {
+  background-color: $rc-primary-contrast;
+  .mdl-layout-title {
+    color: $rc-primary-dark;
+  }
+  .mdl-navigation {
+    .mdl-navigation__link {
+      color: $rc-primary-dark;
+      font-size: 16px;
+      &:hover {
+        background-color: $rc-lightestgray;
+      }
+    }
+  }
+}
+
+// ALERTS
+
+.mdl-alert {
+  background-color: $rc-error-light;
+  min-height: 50px;
+}
+
+.mdl-notice {
+  background-color: $rc-success;
+  min-height: 50px;
+}
+
+.mdl-alert__text {
+  // This feels hacky
+  vertical-align: 6px;
+}

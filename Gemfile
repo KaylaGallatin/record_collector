@@ -29,6 +29,10 @@ gem 'devise'
 # Add css framework for easy styling. Gem: https://github.com/rubysamurai/material_design_lite-sass
 # Material design: https://material.io/design/
 gem 'material_design_lite-sass'
+# Simple form for easier form setup
+gem 'simple_form'
+# Jquery
+gem 'jquery-rails'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
