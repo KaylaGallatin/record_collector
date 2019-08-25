@@ -1,0 +1,10 @@
+<head>
+  <title><%= content_for?(:title) ? yield(:title) : 'Record Collector' %></title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag    'application' %>
+  <%= javascript_include_tag 'application' %>
+
+  <%= yield :head %>
+</head>

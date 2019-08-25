@@ -1,0 +1,47 @@
+<% if alert %>
+  <div class="container alert-container">
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--3-col"></div>
+      <div class="mdl-cell mdl-cell--6-col">
+        <div class="mdl-card mdl-shadow--2dp block--full mdl-alert">
+          <div class="mdl-card__supporting-text">
+            <span class="mdl-alert__close">
+              <i class="material-icons">close</i>
+            </span>
+            <span class="mdl-alert__text">
+              <%= alert %>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="mdl-cell mdl-cell--3-col"></div>
+    </div>
+  </div>
+<% end %>
+
+<% if notice %>
+  <div class="container alert-container">
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--3-col"></div>
+      <div class="mdl-cell mdl-cell--6-col">
+        <div class="mdl-card mdl-shadow--2dp block--full mdl-notice">
+          <div class="mdl-card__supporting-text">
+            <span class="mdl-alert__close">
+              <i class="material-icons">close</i>
+            </span>
+            <span class="mdl-alert__text">
+              <%= notice %>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="mdl-cell mdl-cell--3-col"></div>
+    </div>
+  </div>
+<% end %>
+
+<script>
+  $('.mdl-alert__close').click(function() {
+    $(this).closest('.alert-container').css('display', 'none');
+  });
+</script>

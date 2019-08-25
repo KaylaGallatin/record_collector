@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>RecordCollector</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<%= render 'layouts/head' %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer">
+    <%= render 'layouts/navigation' %>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <%= render 'layouts/alerts' %>
+        <%= yield %>
+      </div>
+    </main>
+  </div>
+</body>
 </html>
