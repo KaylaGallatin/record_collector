@@ -24,8 +24,11 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
-# Use devise for user authentication Read more: https://github.com/plataformatec/devise
+# Use devise for user authentication.  Read more: https://github.com/plataformatec/devise
 gem 'devise'
+# Add css framework for easy styling. Gem: https://github.com/rubysamurai/material_design_lite-sass
+# Material design: https://material.io/design/
+gem 'material_design_lite-sass'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
