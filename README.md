@@ -1,24 +1,23 @@
-# README
+# Record Collector
+Ruby on Rails site used to manage a collection of records.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Info
+- Ruby version: 2.3.7
+- Rails version: 5.2.3
+- User auth: Devise https://github.com/plataformatec/devise
+- Styles: MDL https://getmdl.io/
+- Form help: https://github.com/plataformatec/simple_form
 
-Things you may want to cover:
+## Initial Installation
+- Clone the repo and cd to wherever you saved it
+- Install Homebrew: https://brew.sh/
+- Install Mysql5.6: `brew install mysql@5.6 && brew services start mysql@5.6`
+- Install Rbenv: https://github.com/rbenv/rbenv
+- Install Ruby: `rbenv install`
+- Install Bundler: `gem install bundler`
+- Install other dependencies: `bundle install`
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Initial Setup
+- Create local database: `rake db:create`
+- Migrate local database: `rake db:migrate`
+- Run the project: `rails s` or choose a port: `rails s -p 4000`
