@@ -30,3 +30,16 @@ Ruby on Rails site used to manage a collection of records.
 - Add a "Track" model to add songs to albums. Albums would "have many" tracks, and a track would "belong to" an album.
 - Expand the record index page to add band or artist to the search. 
 - Add the ability to upload an image (album cover) and store it on the album model. 
+
+## GIT
+List of common commands:
+https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf
+
+Generally: 
+1. Start on develop branch, if not on it: "git checkout develop"
+2. Make and checkout a new branch: "git checkout -b BRANCH_NAME"
+3. Make code changes
+4. Add changes to your branch: "git add FILENAME" or "git add -p"
+5. Commit your changes: "git commit -m 'YOUR MESSAGE HERE'"
+6. Push your branch to github: "git push origin BRANCH_NAME"
+7. Open a pull request on github from your branch into the develop branch
