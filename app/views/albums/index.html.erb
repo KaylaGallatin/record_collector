@@ -15,6 +15,7 @@
             <thead>
               <th class="mdl-data-table__cell--non-numeric">Title</th>
               <th class="mdl-data-table__cell--non-numeric">Release Date</th>
+              <th class="mdl-data-table__cell--non-numeric">Description</th>
               <th></th>
             </thead>
             <% @albums.each do |album| %>
@@ -23,7 +24,10 @@
                   <%= link_to album.title, album_path(album) %>
                 </td>
                 <td class="mdl-data-table__cell--non-numeric">
-                  <%= album.release_date %>
+                  <%= album.release_date.strftime("%B %e, %Y") %>
+                </td>
+                <td class="mdl-data-table__cell--non-numeric">
+                  <%= album.description.truncate(30) %>
                 </td>
                 <td>
                   <%= link_to "Edit", edit_album_path(album) %>

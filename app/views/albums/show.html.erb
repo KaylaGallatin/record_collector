@@ -16,7 +16,7 @@
           <h2 class="mdl-card__title-text">Information</h2>
         </div>
         <div class="mdl-card__supporting-text">
-          <p>Released: <%= @album.release_date %></p>
+          <p>Released: <%= @album.release_date.strftime("%B %e, %Y") %></p>
           <p><%= @album.description %></p>
         </div>
       </div>
