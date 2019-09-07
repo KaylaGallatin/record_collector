@@ -20,7 +20,7 @@
             <% @albums.each do |album| %>
               <tr>
                 <td class="mdl-data-table__cell--non-numeric cell--text-large">
-                  <%= link_to album.title, album_path(@album) %>
+                  <%= link_to album.title, album_path(album) %>
                 </td>
                 <td class="mdl-data-table__cell--non-numeric">
                   <%= album.release_date %>
