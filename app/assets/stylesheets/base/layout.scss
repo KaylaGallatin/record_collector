@@ -45,3 +45,79 @@
   // This feels hacky
   vertical-align: 6px;
 }
+
+// MDL CELLS AND CARDS
+
+.mdl-card__actions--right {
+  text-align: right;
+}
+
+.mdl-card__menu {
+  i {
+    color: $rc-primary-dark;
+  }
+}
+
+h2.mdl-card__title-text {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  color: $rc-primary-dark;
+}
+
+.mdl-card__title {
+  background-color: $rc-lightgray;
+}
+
+.mdl-cell--page-title {
+  h1 {
+    font-size: 30px;
+    font-weight: 450;
+    margin: 0;
+    color: $rc-primary-dark;
+    .mdl-button {
+      float: right;
+    }
+  }
+}
+
+// BUTTONS
+
+.mdl-button--warning {
+  background-color: $rc-error;
+}
+
+.mdl-button--gray {
+  background-color: $rc-lightestgray;
+  color: $rc-primary-dark;
+}
+
+.mdl-button--contrast {
+  background-color: $rc-primary-contrast;
+  color: $rc-primary-dark;
+}
+
+// TABLES
+
+.cell--text-large {
+  font-size: 15px;
+}
+
+.mdl-data-table {
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $rc-primary-dark
+    }
+  }
+}
+
+// FORMS
+
+.mdl-textfield {
+  width: 100%;
+}
+
+.mdl-textfield__hint {
+  font-size: 12px;
+}
