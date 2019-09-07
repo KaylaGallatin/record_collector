@@ -50,7 +50,7 @@ class AlbumsController < ApplicationController
     def album_params
       params.require(:album)
             .permit(:title, :release_date, :description)
-            .merge(:user_id: current_user.id)
+            .merge(user_id: current_user.id)
     end
 
 end

@@ -1,12 +1,15 @@
 <header class="mdl-layout__header">
   <div class="mdl-layout__header-row">
+    <span class="mdl-layout-title">Record Collector</span>
     <div class="mdl-layout-spacer"></div>
     <nav class="mdl-navigation mdl-layout--large-screen-only">
+      <%= link_to "Home", user_path(current_user.id), class: 'mdl-navigation__link' %>
       <div class="mdl-navigation__link">
         <button id="account_menu" class="mdl-button">
           Account
         </button>
         <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect" for="account_menu">
+          <li><%= link_to 'Settings', '#', { class: "mdl-menu__item" } %></li>
           <li><%= link_to 'Logout', destroy_user_session_path, { method: :delete, class: "mdl-menu__item" } %></li>
         </ul>
       </div>
@@ -14,8 +17,8 @@
   </div>
 </header>
 <div class="mdl-layout__drawer">
-  <span class="mdl-layout-title"><%= current_user.id %></span>
+  <span class="mdl-layout-title"><%= current_user.email.split('@')[0] %></span>
   <nav class="mdl-navigation">
-    <%= link_to 'My Records', '#', class: "mdl-navigation__link" %>
+    <%= link_to 'My Records', albums_path, class: "mdl-navigation__link" %>
   </nav>
 </div>
