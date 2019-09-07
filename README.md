@@ -21,3 +21,12 @@ Ruby on Rails site used to manage a collection of records.
 - Create local database: `rake db:create`
 - Migrate local database: `rake db:migrate`
 - Run the project: `rails s` or choose a port: `rails s -p 4000`
+
+## Future Work Ideas
+- Add more info the the user model (first name, last name, etc.) with a settings page to manage that info. 
+- Add a search to the record index page in order to search for a specific record in the list.
+- Add an "Band" model to associate albums to their bands. Artist would have attribtues like name, description, hometown? start/end dates? Bands would "have many" albums, and an album would "belong to" a band. 
+- Add an "Artist" model to associate artists to their bands. Bands would "have many" artists.
+- Add a "Track" model to add songs to albums. Albums would "have many" tracks, and a track would "belong to" an album.
+- Expand the record index page to add band or artist to the search. 
+- Add the ability to upload an image (album cover) and store it on the album model. 
